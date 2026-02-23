@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' href='cssstyle.css'>
+    </head>
+
+    <body>
+      <h1>Something Borrowed</h1>
+      <h2>Upcycling</h2>
+      <nav class='navbar'>
+        <a class='menu'></a>
+        <div class='nav-links'>
+          <ul>
+            <li><a href='Home.html'>Home</a></li>            
+            <li><a href='Shop.html'>Eshop</a></li>
+            <li><a href='About.html'>About</a></li>
+            <li><a href='Contact.html'>Contact</a></li>
+          </ul>
+        </div>
+        <img src='Images_site/menu_illu.png' class='logo'>
+      </nav>
+
+      <header></header>
+
+      <div class='music'>
+      <audio autoplay controls loop>
+        <source src='Musiques/are-you-gonna-be-therechocolate-watchband.mp3' type='audio/mpeg'>
+      </audio>
+      </div>
+
+      <div class="collection">
+        <a href="accessoires.html"><img class='accessoires' src="Images_collections/polaaccessoires.png" alt="Accessoires"></a>
+        <a href="dans-l-armoire-de-ma-soeur.html"><img class='soeur' src="Images_collections/polaarmoire.png" alt="Dans l'armoire de ma soeur"></a>
+        <a href="groovy-as-fuck.html"><img class='groovy' src="Images_collections/polagroovy.png" alt="Groovy as fuck"></a>
+        <a href="hakama-kyu.html"><img class='hakama' src="Images_collections/polaueshiba.png" alt="Hakama Kyu"></a>
+        <a href="la-chemise-de-mon-mec.html"><img class='mec' src="Images_collections/polamec.png" alt="La chemise de mon mec"></a>
+        <a href="lingerie.html"><img class='lingerie' src="Images_collections/polalingerie.png" alt="Lingerie"></a>
+      </div>
+
+      <div class='collectext'>
+        <a class='accessoirestxt'>Accessoires</a>
+        <a class='soeurtxt'>Dans l armoire de ma soeur</a>
+        <a class='groovytxt'>Groovy as fuck</a>
+        <a class='hakamatxt'>Hakama Kyu</a>
+        <a class='mectxt'>La chemise de mon mec</a>
+        <a class='lingerietxt'>Lingerie</a>
+      </div>
+     
+      <div class='elements'>
+          <a class='cgv' href='CGV.html'>Terms and Conditions</a>
+          <a class='mentions' href='Mentions_legales.html'>Legal Notice</a>
+      </div>
+
+      <div class='credit'>
+        <a>Website and brand creator</a>
+        <a>© 2022 Charline L.Builles</a>
+        <a>-All rights reserved</a>
+      </div>
+
+      <div class= 'insta'>
+        <a href='https://instagram.com/somethingborrowed_shop'><img src='Images_site/Instagram.png' alt="Mon Instagram"></a>
+
+      <script>
+        const menuHamburger = document.querySelector(".logo")
+        const navLinks = document.querySelector(".nav-links")
+
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle("mobile-menu")
+        })
+      </script>
+
+      <div id="inclusion"></div>
+
+    </body>
+  </html> 

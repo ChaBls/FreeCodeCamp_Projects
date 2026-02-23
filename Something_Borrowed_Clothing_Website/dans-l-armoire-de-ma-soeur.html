@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' href='cssstyle.css'>
+
+      </head>
+
+    <body>
+      <h1>Something Borrowed</h1>
+      <h2>Upcycling</h2>
+      <h3>Dans l'amoire de ma soeur</h3>
+      
+        <nav class='navbar'>
+        <div class='nav-links'>
+          <ul>
+            <li><a href='Home.html'>Home</a></li>            
+            <li><a href='Shop.html'>EShop</a></li>
+            <li><a href='About.html'>About</a></li>
+            <li><a href='Contact.html'>Contact</a></li>
+          </ul>
+        </div>
+        <img src='Images_site/menu_illu.png' class='logo'>
+      </nav>
+
+
+      <span id="votre_id1" class="target"></span>
+      <span id="votre_id2" class="target"></span>
+      <span id="votre_id3" class="target"></span>
+      <span id="votre_id4" class="target"></span>
+      <div class="cadre_diapo">
+        <div class="interieur_diapo">
+          <!-- Chouchou Golden-->
+          <div class='ChouchouGolden'>
+            <span>Chouchou GOLDEN</span>
+            <img src="" alt="Chouchou doré pailleté">
+            <img src="" alt="Chouchou doré pailleté">
+          </div>
+
+          <!-- Chouchou Tartan-->
+          <div class='ChouchouTartan'>
+            <span>Chouchou TARTAN</span>
+            <img src="" alt="Chouchou tissu tartan bleu et rayonne dorée">
+          </div>
+
+          <!-- Chouchou Tattoo-->
+          <div class='ChouchouTattoo'>
+            <span>Chouchou TATTOO</span>
+            <img src="" alt="Chouchou noirs velours motifs tissu tatouages old chool noir velours">
+            <img src="" alt="Chouchou noirs velours motifs tissu tatouages old chool noir velours">
+          </div>              
+        </div>
+        <ul class="navigation_diapo">
+          <li><a href="#votre_id1"><img src="1.jpg" alt></a></li>
+          <li><a href="#votre_id2"><img src="2.jpg" alt></a></li>
+          <li><a href="#votre_id3"><img src="3.jpg" alt></a></li>
+        </ul>
+      </div>
+
+      <header></header>
+
+      <div class='music'>
+      <audio autoplay controls loop>
+        <source src='Musiques/Jefferson.mp3' type='audio/mpeg'>
+      </audio>
+      </div>
+     
+      <div class='elements'>
+          <a class='cgv' href='CGV.html'>Terms and Conditions</a>
+          <a class='mentions' href='Mentions_legales.html'>Legal Notice</a>
+      </div>
+
+      <div class='credit'>
+        <a>Website and brand creator</a>
+        <a>© 2022 Charline L.Builles</a>
+        <a>-All rights reserved</a>
+      </div>
+
+      <div class= 'insta'>
+        <a href='https://instagram.com/somethingborrowed_shop'><img src='Images_site/Instagram.png' alt="Mon Instagram"></a>
+
+      <script>
+        const menuHamburger = document.querySelector(".logo")
+        const navLinks = document.querySelector(".nav-links")
+
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle("mobile-menu")
+        })
+      </script>
+      <div id="inclusion"></div>
+    </body>
+  </html>

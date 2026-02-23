@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' href='cssstyle.css'>
+    </head>
+
+    <body>
+      <h1>Something Borrowed</h1>
+      <h2>Upcycling</h2>
+      <h3>Conditions Générales de Vente</h3>
+      <nav class='navbar'>
+        <div class='nav-links'>
+          <ul>
+            <li><a href='Home.html'>Home</a></li>            
+            <li><a href='Shop.html'>Eshop</a></li>
+            <li><a href='About.html'>About</a></li>
+            <li><a href='Contact.html'>Contact</a></li>
+          </ul>
+        </div>
+        <img src='Images_site/menu_illu.png' class='logo'>
+      </nav>
+
+      <header></header>
+
+      <div class='music'>
+      <audio autoplay controls loop>
+      </audio>
+      </div>
+     
+      <div class='elements'>
+          <a class='cgv' href='CGV.html'>Terms and Conditions</a>
+          <a class='mentions' href='Mentions_legales.html'>Legal Notice</a>
+      </div>
+
+      <div class='credit'>
+        <a>Website and brand creator</a>
+        <a>© 2022 Charline L.Builles</a>
+        <a>-All rights reserved</a>
+      </div>
+
+      <div class= 'insta'>
+        <a href='https://instagram.com/somethingborrowed_shop'><img src='Images_site/Instagram.png' alt="Mon Instagram"></a>
+
+      <script>
+        const menuHamburger = document.querySelector(".logo")
+        const navLinks = document.querySelector(".nav-links")
+
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle("mobile-menu")
+        })
+      </script>
+      
+    </body>
+  </html>
