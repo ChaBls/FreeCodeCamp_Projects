@@ -1,0 +1,568 @@
+@font-face{
+  font-family: 'Retro 60';
+  src: url('Polices/Retro60.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: 'Ruthligos';
+  src: url('Polices/Ruthligos.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: 'Super Retro';
+  src: url('Polices/Super_Retro_M54.ttf') format('truetype');
+}
+
+
+h1{
+  font-family: 'Retro 60';
+  top: 5px;
+  left: 15px;
+  font-size: 12px;
+  color: rgb(114, 39, 16);
+  position: absolute;
+}
+
+
+h2{
+  font-family: 'Retro 60';
+  top: 30px;
+  left: 60px;
+  font-size: 12px;
+  color: rgb(114, 39, 16);
+  position: absolute;
+}
+
+
+h3{
+  font-family: 'Super Retro';
+  top: 70px;
+  left: 700px;
+  font-size: 30px;
+  color: rgb(114, 39, 16);
+  position: absolute;
+}
+
+
+*{box-sizing:border-box}
+
+img{
+
+max-width: 100%;
+
+}
+
+/*pour le saut de page, on cree une class que l'on met en display:none*/
+.target{
+
+display: none
+
+}
+
+
+/* englobe le slider */
+
+.cadre_diapo{
+
+max-width: 600px;
+margin: 2rem auto;
+overflow: hidden;
+	
+	}
+
+.interieur_diapo{
+	
+display: flex;
+width: 400%;
+transition: transform .6s ease-in-out
+	
+	}
+
+.description{
+
+position: relative;
+
+}
+
+.description span{
+
+position: absolute;
+left: 0;
+top: 2%;
+font-size: 75%;
+display: flex;
+padding: .5rem;
+justify-content: center;
+color: white;
+background: hsla(0,0%,0%,.35)
+	
+	}
+
+.smart-button-container{
+  position:absolute;
+}
+
+.collectext a{
+  position: absolute;
+  color: rgb(114, 39, 16);
+  font-family: 'Ruthligos';
+  text-decoration: none;
+}
+.collectext a.accessoirestxt{
+  top: 370px;
+  left: 350px;
+  font-size: x-large;
+}
+.collectext a.soeurtxt{
+  top: 370px;
+  left: 680px;
+  font-size: x-large;
+}
+.collectext a.groovytxt{
+  top: 370px;
+  left: 1130px;
+  font-size: x-large;
+}
+.collectext a.hakamatxt{
+  top: 800px;
+  left: 330px;
+  font-size: x-large;
+}
+.collectext a.mectxt{
+  top: 800px;
+  left: 690px;
+  font-size: x-large;
+}
+.collectext a.lingerietxt{
+  top: 800px;
+  left: 1170px;
+  font-size: x-large;
+}
+
+.collection img{
+  position: absolute;
+}
+.collection a img.accessoires{
+  top: 105px;
+  left: 250px;
+  width: 21%;
+}
+.collection a img.soeur{
+  top: 105px;
+  left: 650px;
+  width: 21%;
+}
+.collection a img.groovy{
+top: 105px;
+left: 1050px;
+width: 21%;
+}
+.collection a img.hakama{
+  top: 520px;
+  left: 250px;
+  width: 21%;
+}
+.collection a img.mec{
+  top: 520px;
+  left: 650px;
+  width: 21%;
+}
+.collection a img.lingerie{
+  top: 520px;
+  left: 1050px;
+  width: 21%;
+}
+
+
+body{
+  font-family:'Super Retro';
+  background: rgb(225, 198, 153);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
+.banner{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 280px;
+  top: 33px;
+  height: 1000px;
+  width: 1000px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.elements{
+  position: absolute;
+  top: 920px;
+  left: 550px;
+}
+
+
+.elements a{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  color: rgb(114, 39, 16);
+  font-family: 'Super Retro';
+  font-size: 8px;
+}
+
+
+.insta{
+  position: fixed;
+  display: flex;
+  top: 650px;
+  left: 1390px;
+}
+
+
+.insta a img{
+  width: 8vw;
+  height: auto;
+}
+
+
+.credit{
+  position:absolute;
+  top: 920px;
+  left: 50px;
+}
+
+
+.credit a{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color:rgb(114, 39, 16);
+  font-family: 'Super Retro';
+  font-size: 8px;
+}
+
+
+.music{
+  display: none;
+}
+
+
+header{
+  height: 100vh;
+  width: 100vw;
+}
+
+
+.navbar .logo{
+  position: absolute;
+  top: 100px;
+  left: 80px;
+  display: block;
+  width: 2.7%;
+}
+
+
+.navbar a{
+  color: rgb(114, 39, 16);
+}
+
+
+.navbar .nav-links ul{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.navbar .nav-links ul li{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+.navbar .nav-links ul li a{
+  text-decoration: none;
+  list-style: none;
+}
+.nav-links{
+  top: 0;
+  left: 0;
+  display: flex;
+  position: absolute;
+  background-color:rgba(159, 164, 230, 0.349);
+  width: 100%;
+  height: 140vh;
+  margin-left: -100%;
+  transition: all 0.5s ease;
+}
+.nav-links.mobile-menu{
+  margin-left: 0;
+}
+.nav-links{
+  margin: 0;
+  top: 200px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color:rgba(159, 164, 230, 0.171);
+  backdrop-filter: blur(15px);
+  width: 14%;
+  height: 30vh;
+  margin-left: -100%;
+  transition: all 0.5s ease;
+}
+
+
+.nav-links.mobile-menu{
+  margin-left: 0;
+}
+
+/*Téléphone vertical*/
+@media screen and (max-width: 500px){
+  .banner{
+    display: none;
+  }
+  .navbar{
+    padding: 0;
+  }
+  .navbar .logo{
+    top: 70px;
+    left: 40px;
+    width: 10%;
+  }
+  .navbar .menu{
+    font-size: 1.5em;
+    top: 25px;
+    left: 15px;
+  }
+  h1{
+    font-family: 'Retro 60';
+    text-align: center;
+    position: absolute;
+    top: 250px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: rgb(114, 39, 16);
+    box-sizing: border-box;
+    display: flex;
+  }
+  h2{
+    font-family: 'Retro 60';
+    text-align: center;
+    position: absolute;
+    top: 370px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: rgb(114, 39, 16);
+    box-sizing: border-box;
+    display: flex;
+  }
+  .navbar .nav-links ul li a{
+    font-size: 1.4em;
+  }
+    .navbar .nav-links{
+    top: 0;
+    left: 0;
+    display: flex;
+    position: absolute;
+    background-color:rgba(159, 164, 230, 0.349);
+    width: 100%;
+    height: 140vh;
+    margin-left: -100%;
+    transition: all 0.5s ease;
+  }
+  .nav-links.mobile-menu{
+    margin-left: 0;
+  }
+
+
+  .elements{
+    top: 780px;
+    left: 150px;
+  }
+  .elements a{
+    font-size: 7px;
+  }
+  .credit{
+    top: 750px;
+    left: 2px;
+  }
+  .credit a{
+    font-size: 7px;
+  }
+  .insta{
+    top: 30px;
+    left: 250px;
+  }
+  .insta a img{
+    width: 35vw;
+    height: auto;
+  }
+}
+
+/*IPad vertical*/
+@media screen and (min-width: 501px) and (max-width: 900px){
+  .banner{
+    display: none;
+  }
+  .navbar{
+    padding: 0;
+  }
+  .navbar .logo{
+    top: 90px;
+    left: 100px;
+    width: 7%;
+  }
+  .navbar .menu{
+    font-size: 1.9em;
+    top: 25px;
+    left: 65px;
+  }
+  h1{
+    font-family: 'Retro 60';
+    text-align: center;
+    position: absolute;
+    top: 350px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: rgb(114, 39, 16);
+    box-sizing: border-box;
+    display: flex;
+  }
+  h2{
+    font-family: 'Retro 60';
+    text-align: center;
+    position: absolute;
+    top: 470px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: rgb(114, 39, 16);
+    box-sizing: border-box;
+    display: flex;
+  }
+  .navbar .nav-links ul li a{
+    font-size: 1.7em;
+  }
+    .navbar .nav-links{
+    top: 0;
+    left: 0;
+    display: flex;
+    position: absolute;
+    background-color:rgba(159, 164, 230, 0.349);
+    width: 100%;
+    height: 140vh;
+    margin-left: -100%;
+    transition: all 0.5s ease;
+  }
+  .nav-links.mobile-menu{
+    margin-left: 0;
+  }
+  .elements{
+    top: 1030px;
+    left: 550px;
+  }
+  .elements a{
+    font-size: 7px;
+  }
+  .credit{
+    top: 1030px;
+    left: 50px;
+  }
+  .credit a{
+    font-size: 7px;
+  }
+  .insta{
+    top: 35px;
+    left: 600px;
+  }
+  .insta a img{
+    width: 70%;
+  }
+}
+
+/*Ipad horizontal*/
+@media screen and (min-width: 1000px) and (max-width: 1100px){
+  .banner{
+    display: none;
+  }
+  .navbar{
+    padding: 0;
+  }
+  .navbar .logo{
+    top: 90px;
+    left: 55px;
+    width: 5%;
+  }
+  .navbar .menu{
+    font-size: 1.9em;
+    top: 25px;
+    left: 35px;
+  }
+  h1{
+    font-family: 'Retro 60';
+    text-align: center;
+    position: absolute;
+    top: 220px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: rgb(114, 39, 16);
+    box-sizing: border-box;
+    display: flex;
+  }
+  h2{
+    font-family: 'Retro 60';
+    text-align: center;
+    position: absolute;
+    top: 340px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: rgb(114, 39, 16);
+    box-sizing: border-box;
+    display: flex;
+  }
+  .navbar .nav-links ul li a{
+    font-size: 1.7em;
+  }
+    .navbar .nav-links{
+    top: 0;
+    left: 0;
+    display: flex;
+    position: absolute;
+    background-color:rgba(159, 164, 230, 0.349);
+    width: 100%;
+    height: 140vh;
+    margin-left: -100%;
+    transition: all 0.5s ease;
+  }
+  .nav-links.mobile-menu{
+    margin-left: 0;
+  }
+  .elements{
+    top: 750px;
+    left: 780px;
+  }
+  .credit{
+    top: 750px;
+    left: 10px;
+  }
+  .insta{
+    top: 35px;
+    left: 800px;
+  }
+  .insta a img{
+    width: 60%;
+  }
+}
+
